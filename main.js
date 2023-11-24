@@ -9,7 +9,7 @@ botaoBusca.addEventListener('click', async () => {
 
 async function buscarDadosDaCidade(cidade) {
     // PEGUEI ESSA URL NA DOCUMENTAÇÃO DA API
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${chaveApi}&q=${cidade}&aqi=no&lang=pt`
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${chaveApi}&q=${cidade}&aqi=no&lang=pt`
     const chamarApi = await fetch(apiUrl);
 
     if(chamarApi.status !== 200) {
